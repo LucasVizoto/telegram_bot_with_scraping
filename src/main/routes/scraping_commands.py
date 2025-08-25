@@ -1,4 +1,4 @@
-from src.drivers.telegram_comunicator import bot
+from src.integrations.telegram_comunicator import bot
 from src.repositories.scraping_news_g1 import scraping_five_recent_news_from_g1
 
 @bot.message_handler(commands=['noticias', 'notícias', 'g1', 'G1'])
