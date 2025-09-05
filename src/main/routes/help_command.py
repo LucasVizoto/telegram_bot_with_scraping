@@ -1,4 +1,4 @@
-from src.drivers.telegram_comunicator import bot
+from src.integrations.telegram_comunicator import bot
 
 @bot.message_handler(commands=['help', 'start'])
 def send_welcome(message:str) -> None:
