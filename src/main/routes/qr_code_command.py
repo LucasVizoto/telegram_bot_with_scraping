@@ -20,5 +20,5 @@ def send_qr_code_image(message: str) -> None:
 
 def __validator_message(message: str) -> bool:
     if not message:
-        bot.reply_to(message, "Por favor, envie uma mensagem após o comando /qrcode.")
+        bot.send_message("Por favor, envie uma mensagem após o comando /qrcode.")
         return  #iterrompendo a execução do bot

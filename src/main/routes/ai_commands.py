@@ -7,6 +7,6 @@ def ai_command(message: str):
 
     if not user_message:
         bot.reply_to(message, "Por favor, envie uma mensagem após o comando /ai.")
-    
-    text_response = conversation_ai_repository(user_message)
-    bot.reply_to(text_response)
+    else:
+        text_response = conversation_ai_repository(user_message)
+        bot.reply_to(message, text_response)
